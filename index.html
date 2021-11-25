@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 - Decode / Encode</title>
+    <style>
+        #input{
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script src="app.js"></script>
+    <h1>Base64 - Decode / Encode</h1>
+    <h2>Decode</h2>
+    <FORM NAME="Decode" ACTION="" METHOD="GET">
+        Enter something in the box (Base 64): <BR>
+        <INPUT id="input" TYPE="text" NAME="inputbox" placeholder="dGVzdA==" VALUE=""><P>
+        <INPUT TYPE="button" NAME="button" Value="Decode" onClick="decode(this.form)">
+    </FORM>
+
+    <h2>Encode</h2>
+    <FORM NAME="Encode" ACTION="" METHOD="GET">
+        Enter something in the box (ASCII): <BR>
+        <INPUT id="input" TYPE="text" NAME="inputbox" placeholder="test" VALUE=""><P>
+        <INPUT TYPE="button" NAME="button" Value="Encode" onClick="encode(this.form)">
+    </FORM>
+
+    <p id="solution"></p>
+</body>
+</html>
