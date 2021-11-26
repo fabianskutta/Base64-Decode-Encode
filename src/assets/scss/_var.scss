@@ -1,0 +1,15 @@
+:root {
+    --bg: #0B0E11;
+    --main: #FD4D4D;
+    --second: #fff;
+    --box: #13181d;
+    --link: #757575;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #fff;
+        --second: #000;
+        --box: #f5f5f5;
+    }
+  }

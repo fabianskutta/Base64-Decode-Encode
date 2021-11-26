@@ -1,0 +1,26 @@
+body,
+html {
+    align-items: center;
+    background-color: var(--bg);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: var(--main);
+    line-height: 1em;
+    font-size: 3.25em;
+    line-height: 1.35em;
+}
+
+p {
+    color: var(--second);
+}
+
+.displaynone {
+    display: none;
+}
+
+.solutionbox {
+    background-color: var(--box);
+    word-wrap: break-word;
+}

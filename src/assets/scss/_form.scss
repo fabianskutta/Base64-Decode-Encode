@@ -1,0 +1,158 @@
+.btn {
+    outline: none;
+    height: 45px;
+    text-align: center;
+    width: 120px;
+    border-radius: 50px;
+    border: 2px solid var(--main);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    background-color: var(--bg);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    content: "sdsd";
+  }
+
+@media only screen and (min-width: 900px) {
+.btn:hover {
+     background: var(--main);
+    box-shadow: 1px 2px 22px 0px var(--main);
+    letter-spacing: 1px;
+    }
+
+    .btn:active {
+    letter-spacing: 2px;
+     box-shadow: 3px 2px 22px 0px var(--main);
+     }
+  }
+
+@media only screen and (max-width: 900px) {
+    .btn {
+        background: var(--main);
+        box-shadow: 1px 2px 22px 0px var(--main);
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        font-size: 2.00em;
+        line-height: 1.35em;
+    }
+}
+
+form {
+    color: var(--second);
+    margin-bottom: 50px;
+}
+
+.group { 
+    position: relative;
+}
+
+input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+    background-color: var(--bg);
+    color: var(--second);
+  }
+
+  input:focus { 
+      outline:none; 
+    }
+  
+  label {
+    color:#999; 
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  input:focus ~ label, input:valid ~ label {
+    top:-20px;
+    font-size:14px;
+    color:var(--main);
+  }
+  
+  .bar 	{ 
+    position: relative; 
+    display: block; 
+    width: 300px; 
+}
+
+  .bar:before, .bar:after{
+    content:'';
+    height: 2px; 
+    width: 0;
+    bottom: 1px; 
+    position: absolute;
+    background: var(--main); 
+    transition: 0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+  .bar:before {
+    left: 50%;
+  }
+
+  .bar:after {
+    right: 50%; 
+  }
+  
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+  }
+  
+  .highlight {
+    position: absolute;
+    height: 60%; 
+    width: 100px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  @-webkit-keyframes inputHighlighter {
+      from { background:var(--main); }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:var(--main); }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:var(--main); }
+    to 	{ width:0; background:transparent; }
+  }
+
+.fa-copy {
+    font-size: 20px;
+    color: var(--second);
+    margin-left: 10px;
+    transition: all 0.25s ease;
+}
+
+.fa-copy:hover {
+    color: var(--main);
+}
+
+p {
+    display: inline-block;
+}

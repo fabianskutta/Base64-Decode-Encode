@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Base64 - Decode / Encode</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.fabian.lol/logos/favicon.png">
+    <link rel="shortcut icon" href="https://cdn.fabian.lol/logos/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" sizes="96x96">
+
+    <!-- import CSS -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+
+    <!-- import fontawesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Base64 - Decode / Encode</h1>
+    <FORM NAME="Decode" METHOD="GET">
+        <div class="group">
+            <INPUT id="input" TYPE="text" NAME="de" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Decode</label>
+        </div>
+        <INPUT class="btn" TYPE="button" NAME="button" Value="Decode" onClick="decode(this.form)">
+    </FORM>
+
+    <FORM NAME="Encode" METHOD="GET">
+        <div class="group">
+            <INPUT id="input" TYPE="text" NAME="en" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Encode</label>
+        </div>
+        <INPUT class="btn" TYPE="button" NAME="button" Value="Encode" onClick="encode(this.form)">
+    </FORM>
+
+    <div id="solutionbox" class="displaynone solutionbox">
+        <p id="solution"></p><i onclick="copy()" class="fas fa-copy"></i>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/fabianskutta/Base64-Decode-Encode" target="_blank">watch on Github</a>
+    </div>
+    <!-- import JS -->
+    <script src="./assets/js/app.min.js"></script>
+</body>
+</html>
