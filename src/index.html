@@ -15,39 +15,40 @@
     <link rel="icon" type="image/png" href="https://cdn.fabian.lol/logos/favicon.png" sizes="96x96">
 
     <!-- import CSS -->
-    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css?v=2">
 
     <!-- import fontawesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- import librarys -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
 </head>
 <body>
     <h1>Base64 - Decode / Encode</h1>
     <FORM NAME="Decode" METHOD="GET">
         <div class="group">
-            <INPUT id="input" TYPE="text" NAME="de" required>
+            <INPUT id="input" class="input" TYPE="text" NAME="de" required>
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Decode</label>
         </div>
-        <INPUT class="btn" TYPE="button" NAME="button" Value="Decode" onClick="decode(this.form)">
+        <INPUT class="btn btn-big btn-primary" TYPE="button" NAME="button" Value="Decode" onClick="decode(this.form)">
     </FORM>
 
     <FORM NAME="Encode" METHOD="GET">
         <div class="group">
-            <INPUT id="input" TYPE="text" NAME="en" required>
+            <INPUT id="input" class="input" TYPE="text" NAME="en" required>
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Encode</label>
         </div>
-        <INPUT class="btn" TYPE="button" NAME="button" Value="Encode" onClick="encode(this.form)">
+        <INPUT class="btn btn-big btn-primary" TYPE="button" NAME="button" Value="Encode" onClick="encode(this.form)">
     </FORM>
 
     <div id="solutionbox" class="displaynone solutionbox">
-        <p id="solution"></p><i onclick="copy()" class="fas fa-copy"></i>
-    </div>
-
-    <div class="footer">
-        <a href="https://github.com/fabianskutta/Base64-Decode-Encode" target="_blank">watch on Github</a>
+        <p id="solution"></p><a class="btn btn-small btn-primary" onclick="copy()"><i id="copy" class="far fa-copy"></i><i id="check" style="opacity:0;" class="fa fa-check"></i></a>
     </div>
     <!-- import JS -->
     <script src="./assets/js/app.min.js"></script>

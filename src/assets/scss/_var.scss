@@ -1,15 +1,15 @@
 :root {
-    --bg: #0B0E11;
-    --main: #FD4D4D;
+    --bg: #111217;
+    --main: #f9063b;
     --second: #F4F6FB;
-    --box: #13181d;
+    --box: #15171D;
     --link: #757575;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --bg: #F4F6FB;
-        --second: #0B0E11;
+        --second: #111217;
         --box: #FFFFFF;
     }
   }

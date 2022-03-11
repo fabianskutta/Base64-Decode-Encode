@@ -16,11 +16,64 @@ p {
     color: var(--second);
 }
 
-.displaynone {
-    display: none;
-}
 
 .solutionbox {
     background-color: var(--box);
     word-wrap: break-word;
+    display: flex;
+  align-items: center;
 }
+
+.displaynone {
+    display: none;
+}
+  
+  .btn {
+    text-align: center;
+    color: #f4f6fb;
+    width: fit-content;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    user-select: none;
+    border:none;
+  }
+  
+  .btn-small {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 15px;
+    margin-left: 1.25rem;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    i {
+      position: absolute;
+    }
+  }
+  
+  .btn-big {
+  display: inline-block;
+  font-size: 1.25rem;
+  margin: .5rem;
+  padding: .5rem 1rem;
+  }
+  
+  .btn-primary {
+    background: var(--main);
+    box-shadow: 0px 3px 13px 3px #f9063b4d;
+  }
+  
+  .btn:hover {
+    transform: scale(0.96);
+  }
+  
+  .btn:active {
+    transform: scale(0.9);
+  }
