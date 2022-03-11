@@ -16,6 +16,13 @@ p {
     color: var(--second);
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
 
 .solutionbox {
     background-color: var(--box);
